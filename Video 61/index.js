@@ -12,12 +12,27 @@ This faulty calculator does following:
 It performs wrong operation 10% of the times
 
 */
+function calc(a,c, b){
+    if(c=='+'){
+        return a+b;
+    }
+    else if(c=='-'){
+        return a-b;
+    }
+    else if(c=='*'){
+        return a*b;
+    }
+    else if(c=='/'){
+        return a/b;
+    }
+
+}
 
 let random = Math.random()
 console.log(random)
-let a = prompt("Enter first number")
+let a = Number(prompt("Enter first number"))
 let c = prompt("Enter operation")
-let b = prompt("Enter second number")
+let b = Number(prompt("Enter second number"))
 
 let obj = {
     "+": "-",
@@ -31,13 +46,15 @@ let obj = {
 if (random > 0.1) {
     // Perform correct calculation
     console.log(`The result is ${a} ${c} ${b}`)
-    alert(`The result is ${eval(`${a} ${c} ${b}`)}`)
+    alert(`The result is ${calc(a,c,b)}`)
+    // alert(`The result is ${eval(`${a} ${c} ${b}`)}`)
     
 }
 
 else {
     // Perform wrong calculation
     c = obj[c]
-    alert(`The result is ${eval(`${a} ${c} ${b}`)}`) 
+    alert(`The result is ${calc(a,c,b)}`) 
+    // alert(`The result is ${eval(`${a} ${c} ${b}`)}`)
 
 }
