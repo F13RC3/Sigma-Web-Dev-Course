@@ -4,8 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .outer_box{
+            border-radius: 15px;
+            border: 1px solid rgb(177, 177, 177);;
+            width: 300px;
+            height: 450px;
+            overflow: auto;
+            position: relative;
+        }
+        .image{
+            padding: 2px;
+            margin: 2px;
+            border-radius: 15px;
+            /* position: relative;
+            left: 2px;
+            top: 2px; */
+        }
+        .box{
+            padding: 5px;
+            margin: 2px;
+            border-radius: 10px;
+            border: 1px solid rgb(177, 177, 177);
+            display: inline-block;
+            position: relative;
+            left: 10px;
+            color: rgb(177, 177, 177);
+        }
+        .box1{
+            padding: 5px;
+            margin: 2px;
+            /* position: relative;
+            left: 10px; */
+        }
+        p{
+            color: rgb(177, 177, 177);
+        }
+        .box2{
+            padding: 5px;
+            margin: 2px;
+            border-radius: 10px;
+            border: 1px solid rgb(177, 177, 177);
+            /* text-align: center; */
+            display: inline;
+            /* align-items: center; */
+            color: blue;
+            background-color: rgb(193, 193, 255);
+            position: relative;
+            left: 35%;
+        }
+    </style>
 </head>
 <body>
+    <div class="outer_box">
+        <img src="https://llandscapes-10674.kxcdn.com/wp-content/uploads/2018/01/2-1.jpg" alt="" width="290px"class="image">
+        <div class="box">Lake</div>
+        <div class="box">Nature</div>
+        <div class="box1">
+            <h2>Exercise</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta architecto atque, modi voluptatum excepturi ipsum quisquam accusantium repellendus obcaecati unde rerum. Tenetur, voluptate.</p>
+        <div class="box2">Read More</div>
+        </div>
+    </div>
     <!-- card.png is a file which contains a card Image. Write html and css code to design this card. Use #html -->
 </body>
 </html>
