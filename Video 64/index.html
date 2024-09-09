@@ -7,47 +7,67 @@
 </head>
 <body>
     <script>
-        let rand = Math.random()
-        let first, second, third;
+        const obj1 ={
+            1:"Crazy",
+            2:"Amazing",
+            3:"Fire"
+        }
+        const obj2 ={
+            1:"Engine",
+            2:"Foods",
+            3:"Garments"
+        }
+        const obj3 ={
+            1:"Bros",
+            2:"Limited",
+            3:"Hub"
+        }
+        let first = obj1[Math.floor(Math.random()*3)+1]
+        let second = obj2[Math.floor(Math.random()*3)+1]
+        let third = obj3[Math.floor(Math.random()*3)+1]
+        console.log(Math.floor(Math.random()*3)+1)
+        console.log(`${first} ${second} ${third}`)
+        // let rand = Math.random()
+        // let first, second, third;
         // 0 0.33 0.66 1
 
 
         // Lets generate the first word
-        if(rand<0.33){
-            first = "Crazy"
-        }
-        else if(rand<0.66 && rand>=0.33){
-            first = "Amazing"
-        }
-        else{
-            first = "Fire"
-        }
+        // if(rand<0.33){
+        //     first = "Crazy"
+        // }
+        // else if(rand<0.66 && rand>=0.33){
+        //     first = "Amazing"
+        // }
+        // else{
+        //     first = "Fire"
+        // }
 
-        // Lets generate the second word
-        rand = Math.random()
-        if(rand<0.33){
-            second = "Engine"
-        }
-        else if(rand<0.66 && rand>=0.33){
-            second = "Foods"
-        }
-        else{
-            second = "Garments"
-        }
+        // // Lets generate the second word
+        // rand = Math.random()
+        // if(rand<0.33){
+        //     second = "Engine"
+        // }
+        // else if(rand<0.66 && rand>=0.33){
+        //     second = "Foods"
+        // }
+        // else{
+        //     second = "Garments"
+        // }
 
-        // Lets generate the third word
-        rand = Math.random()
-        if(rand<0.33){
-            third = "Bros"
-        }
-        else if(rand<0.66 && rand>=0.33){
-            third = "Limited"
-        }
-        else{
-            third = "Hub"
-        }
-
-        console.log(`${first} ${second} ${third}`)
+        // // Lets generate the third word
+        // rand = Math.random()
+        // if(rand<0.33){
+        //     third = "Bros"
+        // }
+        // else if(rand<0.66 && rand>=0.33){
+        //     third = "Limited"
+        // }
+        // else{
+        //     third = "Hub"
+        // }
+        
+        // console.log(`${first} ${second} ${third}`)
     </script>
 </body>
 </html>
