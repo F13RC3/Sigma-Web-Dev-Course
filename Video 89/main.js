@@ -1,7 +1,6 @@
 const express = require('express')
 const blog = require('./routes/blog')
 const shop = require('./routes/shop')
- 
 
 
 const app = express()
